@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,700;1,500&display=swap" rel="stylesheet">
+    <title>Group 13</title>
+</head>
+    <style>
+        .pacifico{
+            font-family: Pacifico;
+        }
+        .Roboto{
+            font-family: Roboto;
+        }
+        .body{
+            height: 100vh;
+            background-image: url(assets/images/background-dong-hoa-roi_032848608.gif);
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            transition: all 0.5s;
+        }
+        .container{
+            max-width: 1200px;
+            width: 100%;
+            padding: 0px 15px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        .body_content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .item{
+            width: 24.5%;
+            height: 45vh;
+            overflow: hidden;
+            position: relative;
+            transition: all 1s;
+            border-radius: 7px;
+        }
+        .item:hover{
+            box-shadow: 0px 0px 8px 0.5px #644feb;
+        }
+        .item:hover .item_content{
+            background-color: rgba(80, 87, 215, 0.2);
+        }
+        .item:hover img{
+            transform: scale(1.1);
+        }
+        .item_content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: all 0.5s;
+            text-align: center;
+            padding-top: 5em;
+        }
+        h2{
+            padding: 30px 0px;
+            color: #fb6376;
+        }
+        .item_content h2{
+            transition: all 0.8s;
+            transform: translateY(120px);
+            opacity: 0;
+        }
+        .item_content a{
+            opacity: 0;
+            transition: all 1s;
+            display: inline-block;
+            border-radius: 7px;
+            transform: translateY(120px);
+        }
+        .item:hover .item_content h2{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .item:hover .item_content a{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .btn{
+            transition: all 0.5s;
+            padding: 10px 30px;
+            background: #dc143c;
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: 700;
+            color: #ffdccc;
+        }
+        .btn:hover{
+            background: #ffdccc;
+            color: #5d2a42;
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 0px 0px 100px 10px rgb(218, 89, 89);
+            background-color: rgba(0, 0, 0, 0.8);
+            height: 12vh;
+            color: #dc143c;
+            display: flex;
+            align-items: center;
+        }
+        .header_content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header_content{
+            width: 100%;
+            margin: auto;
+            text-align: right;
+        }
+        .header_content_slogan{
+            flex-basis: 70%;
+        }
+        .header_content_title{
+            flex-basis: 20%;
+        }
+        .header_content_logo{
+            flex-basis: 6%;
+        }
+        .footer{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 1;
+            box-shadow: 0px 0px 100px 150px rgba(80, 87, 215, 0.2);;
+        }
+    </style>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header_content">
+                <div class = "header_content_slogan"><marquee class = "pacifico" scrollamount = "5" direction="" width="100%" behavior="alternate"><h1>Welcome to the group 13 homepage!</h1></marquee></div>
+                <div class = "header_content_title"><h2 class = "pacifico" style = "color: #a60d1c;">Personal CV</h2></div>
+                <div class = "header_content_logo"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg></div>
+            </div>
+        </div>
+    </div>
+    <div class = "footer"></div>
+    <div class="body">
+        <div class="container">
+            <div class="body_content">
+                <div class  = "item item1" style = "max-height: 470px;">
+                    <img src="assets/images/z3361681906204_5dcdf0f8f5f309a26ac75f711dfbabce.jpg" alt="">
+                    <div class = 'item_content'>
+                        <h2 class = "pacifico">Nguyễn Văn Sang</h2>
+                        <a href="nguyenvansang/index.html" target ="_blank" class = "btn Roboto">GO CV</a>
+                    </div>
+                </div>
+                <div class  = "item item2" >
+                    <img src="assets/images/z3758305639850_a82e8cdb0b51f77410de3f65af55c82c.jpg" alt="">
+                    <div class = 'item_content'>
+                        <h2 class = "pacifico">Trần Văn Quyền</h2>
+                        <a href="tranvanquyen/index.html" target ="_blank" class = "btn Roboto">GO CV</a>
+                    </div>
+                </div>
+                <div class  = "item item3" >
+                    <img src="assets/images/son.jpg" alt="">
+                    <div class = 'item_content'>
+                        <h2 class = "pacifico">Lê Hồng Sơn</h2>
+                        <a href="lehongson/CV LHS.html" target ="_blank" class = "btn Roboto">GO CV</a>
+                    </div>
+                </div>
+                <div class  = "item item4">
+                    <img src="assets/images/quan.jpg" alt="">
+                    <div class = 'item_content'>
+                        <h2 class = "pacifico">Trần Hồng Quân</h2>
+                        <a href="tranhongquan/CV.html"  target ="_blank" class = "btn Roboto">GO CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/assets/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.item1').css('animation', 'pulse ease 4s');
+            $('.item2').css('animation', 'pulse ease 4s');
+            $('.item3').css('animation', 'pulse ease 4s');
+            $('.item4').css('animation', 'pulse ease 4s');
+            $('.body').css('animation', 'pulse ease 3s');
+            $('.header').css('animation', 'pulse ease 3s');
+            $('.footer').css('animation', 'pulse ease 3s');
+            $('marquee').css('animation', 'flip ease 3s');
+        });;
+    </script>
+</body>
+</html>
